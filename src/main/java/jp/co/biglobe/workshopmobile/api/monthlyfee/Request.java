@@ -1,6 +1,5 @@
 package jp.co.biglobe.workshopmobile.api.monthlyfee;
 
-import jp.co.biglobe.workshopmobile.domain.model.entamefree.IsActive;
 import jp.co.biglobe.workshopmobile.domain.model.plan.Plan;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,7 +24,7 @@ class Request {
         private final Plan plan;
     }
 
-    public PlanForm getPlanForm(){
+    public PlanForm getPlanForm() {
         return plan;
     }
 }

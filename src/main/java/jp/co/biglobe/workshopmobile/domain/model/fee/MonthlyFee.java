@@ -11,7 +11,7 @@ public class MonthlyFee {
     @Getter
     private final int value;
 
-    public MonthlyFee add(MonthlyFee that){
+    public MonthlyFee add(MonthlyFee that) {
         return new MonthlyFee(this.value + that.value);
     }
 }

@@ -12,7 +12,7 @@ public class EntameFree {
     @Getter
     private MonthlyFee monthlyFee;
 
-    public EntameFree(IsActive isActive){
+    public EntameFree(IsActive isActive) {
         this.isActive = isActive;
         this.monthlyFee = new MonthlyFee(1200);
     }
