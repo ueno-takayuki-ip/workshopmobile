@@ -20,12 +20,9 @@ public class MonthlyFeeApi {
     ) {
         FeeService feeService = new FeeService();
 
-
         Map<String, Object> res = new HashMap<>();
 
-        res.put("monthly_fee", feeService.calcutateMonthlyFee(request.getPlanForm().getPlan(), request.isEntame_free()));
-
-//        res.put("monthly_fee", Plan._1ギガ.getMonthlyFee().getValue() /* TODO 月額料金を返す */);
+        res.put("monthly_fee", feeService.calcutateMonthlyFee(request.getPlanForm().getPlan(), request.isEntame_free()).getValue());
         return res;
     }
 
